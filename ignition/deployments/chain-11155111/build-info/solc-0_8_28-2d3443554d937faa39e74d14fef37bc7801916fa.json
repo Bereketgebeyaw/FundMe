@@ -1,0 +1,39 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-2d3443554d937faa39e74d14fef37bc7801916fa",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "userSourceNameMap": {
+    "contracts/interfaces/AggregatorV3Interface.sol": "project/contracts/interfaces/AggregatorV3Interface.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/interfaces/AggregatorV3Interface.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface AggregatorV3Interface {\n    function decimals() external view returns (uint8);\n\n    function description() external view returns (string memory);\n\n    function version() external view returns (uint256);\n\n    function getRoundData(\n        uint80 _roundId\n    )\n        external\n        view\n        returns (\n            uint80 roundId,\n            int256 answer,\n            uint256 startedAt,\n            uint256 updatedAt,\n            uint80 answeredInRound\n        );\n\n    function latestRoundData()\n        external\n        view\n        returns (\n            uint80 roundId,\n            int256 answer,\n            uint256 startedAt,\n            uint256 updatedAt,\n            uint80 answeredInRound\n        );\n}\n"
+      }
+    }
+  }
+}
