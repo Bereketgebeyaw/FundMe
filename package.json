@@ -1,11 +1,12 @@
 {
   "name": "FundMe",
+  "author": "Bereket Gebeyaw",
   "version": "1.0.0",
   "type": "module",
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^4.0.3",
     "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.2",
-    "@nomicfoundation/hardhat-ignition": "^3.0.5",
+    "@nomicfoundation/hardhat-ignition": "^3.0.6",
     "@nomicfoundation/hardhat-ignition-ethers": "^3.0.6",
     "@nomicfoundation/hardhat-mocha": "^3.0.8",
     "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
@@ -25,6 +26,13 @@
   },
   "dependencies": {
     "@chainlink/contracts": "^1.5.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.6",
+    "@nomicfoundation/hardhat-keystore": "^3.0.3",
+    "@nomicfoundation/hardhat-node-test-runner": "^3.0.8",
+    "@nomicfoundation/hardhat-verify": "^3.0.8",
+    "@nomicfoundation/hardhat-viem": "^3.0.1",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.4",
     "dotenv": "^17.2.3"
   }
 }
